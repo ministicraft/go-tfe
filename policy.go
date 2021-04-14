@@ -123,7 +123,7 @@ type PolicyCreateOptions struct {
 	Description *string `jsonapi:"attr,description,omitempty"`
 
 	// The enforcements of the policy.
-	Enforce []*EnforcementOptions `jsonapi:"attr,enforce"`
+	Enforce []EnforcementOptions `jsonapi:"attr,enforce"`
 }
 
 // EnforcementOptions represents the enforcement options of a policy.
@@ -210,7 +210,7 @@ type PolicyUpdateOptions struct {
 	Description *string `jsonapi:"attr,description,omitempty"`
 
 	// The enforcements of the policy.
-	Enforce []*EnforcementOptions `jsonapi:"attr,enforce,omitempty"`
+	Enforce []EnforcementOptions `jsonapi:"attr,enforce,omitempty"`
 }
 
 // Update an existing policy.
