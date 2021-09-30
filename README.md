@@ -1,4 +1,8 @@
 Terraform Cloud/Enterprise Go Client
+
+hello
+world
+foo
 ==============================
 
 [![Build Status](https://circleci.com/gh/hashicorp/go-tfe.svg?style=shield)](https://circleci.com/gh/hashicorp/go-tfe)
