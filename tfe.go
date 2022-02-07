@@ -128,6 +128,7 @@ type Client struct {
 	Users                      Users
 	UserTokens                 UserTokens
 	Variables                  Variables
+	VariableSets               VariableSets
 	Workspaces                 Workspaces
 
 	Meta Meta
@@ -264,6 +265,7 @@ func NewClient(cfg *Config) (*Client, error) {
 	client.Users = &users{client: client}
 	client.UserTokens = &userTokens{client: client}
 	client.Variables = &variables{client: client}
+	client.VariableSets = &variableSets{client: client}
 	client.Workspaces = &workspaces{client: client}
 
 	client.Meta = Meta{
