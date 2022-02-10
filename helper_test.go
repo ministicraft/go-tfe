@@ -969,7 +969,6 @@ func createWorkspaceWithVCS(t *testing.T, client *Client, org *Organization, opt
 	ctx := context.Background()
 	w, err := client.Workspaces.Create(ctx, org.Name, options)
 	if err != nil {
-
 		t.Fatal(err)
 	}
 
